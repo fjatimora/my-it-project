@@ -99,7 +99,7 @@ namespace CIW
             this.Date,
             this.Name,
             this.Score});
-            this.dataGridView1.Location = new System.Drawing.Point(161, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(820, 128);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(444, 205);
@@ -133,7 +133,7 @@ namespace CIW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1404, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnTop);
@@ -141,6 +141,7 @@ namespace CIW
             this.Controls.Add(this.btnHistory);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Name = "FrmScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Score";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
