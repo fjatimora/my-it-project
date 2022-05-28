@@ -30,7 +30,7 @@ namespace CIW
 
         }
 
-        private void GetData()
+        private void GetData(string newquery)
         {
             try
             {
@@ -42,12 +42,7 @@ namespace CIW
 
                 SqlCommand sqlCommand;
                 SqlDataReader sqlDataReader;
-                string query = "SELECT GameID, Date, PlayerName, Score FROM Game";
-                string col1 = string.Empty;
-                string col2 = string.Empty;
-                string col3 = string.Empty;
-                string col4 = string.Empty;
-                string result = string.Empty;
+                string query = newquery;
 
 
                 sqlCommand = new SqlCommand(query, cnn);
@@ -55,20 +50,11 @@ namespace CIW
 
                 while (sqlDataReader.Read())
                 {
-                    col1 = sqlDataReader.GetValue(0).ToString();
-                    col2 = sqlDataReader.GetValue(1).ToString();
-                    col3 = sqlDataReader.GetValue(2).ToString();
-                    col4 = sqlDataReader.GetValue(3).ToString();
-
-                    result = result + col1 + ". " + col2 + " " + " " + col3 + " " + col4 + Environment.NewLine;
-
                     ListID.Add(sqlDataReader.GetValue(0).ToString());
                     ListDateTime.Add(sqlDataReader.GetValue(1).ToString());
                     ListName.Add(sqlDataReader.GetValue(2).ToString());
                     ListScore.Add(sqlDataReader.GetValue(3).ToString());
                 }
-
-                textBox2.Text = result;
 
                 cnn.Close();
 
@@ -79,19 +65,45 @@ namespace CIW
             }
         }
 
-        private void updateDatagrid()
+        private void updateDatagrid(int j)
         {
-            dataGridView1.Rows.Clear();
-            for (int i = 0; i < ListID.Count; i++)
+            if (j == 1)
             {
-                DataGridViewRow newRow = new DataGridViewRow();
+                dataGridView1.Rows.Clear();
+                for (int i = 0; i < ListID.Count; i++)
+                {
+                    DataGridViewRow newRow = new DataGridViewRow();
 
-                newRow.CreateCells(dataGridView1);
-                newRow.Cells[0].Value = ListID[i];
-                newRow.Cells[1].Value = ListDateTime[i];
-                newRow.Cells[2].Value = ListName[i];
-                newRow.Cells[3].Value = ListScore[i];
-                dataGridView1.Rows.Add(newRow);
+                    newRow.CreateCells(dataGridView1);
+                    newRow.Cells[0].Value = ListID[i];
+                    newRow.Cells[1].Value = ListDateTime[i];
+                    newRow.Cells[2].Value = ListName[i];
+                    newRow.Cells[3].Value = ListScore[i];
+                    dataGridView1.Rows.Add(newRow);
+                }
+                ListID.Clear();
+                ListDateTime.Clear();
+                ListName.Clear();
+                ListScore.Clear();
+            }
+            else if (j == 2)
+            {
+                dataGridView2.Rows.Clear();
+                for (int i = 0; i < ListID.Count; i++)
+                {
+                    DataGridViewRow newRow = new DataGridViewRow();
+
+                    newRow.CreateCells(dataGridView2);
+                    newRow.Cells[0].Value = ListID[i];
+                    newRow.Cells[1].Value = ListDateTime[i];
+                    newRow.Cells[2].Value = ListName[i];
+                    newRow.Cells[3].Value = ListScore[i];
+                    dataGridView2.Rows.Add(newRow);
+                }
+                ListID.Clear();
+                ListDateTime.Clear();
+                ListName.Clear();
+                ListScore.Clear();
             }
         }
 
@@ -100,7 +112,6 @@ namespace CIW
             try
             {
                 username = CIW.username;
-                textBox1.Text = username;
                 string score = savescore.ToString();
                 string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
@@ -128,53 +139,10 @@ namespace CIW
             }
         }
 
-        private void top10()
-        {
-            try
-            {
-                string conString;
-                conString = @"Data Source=localhost; Initial Catalog=CIW;User ID=sa;Password=QAZwsx123";
-
-                SqlConnection cnn = new SqlConnection(conString);
-                cnn.Open();
-
-                SqlCommand sqlCommand;
-                SqlDataReader sqlDataReader;
-                string query = "SELECT TOP 10 * FROM Game ORDER BY (Score) DESC";
-                string col1 = string.Empty;
-                string col2 = string.Empty;
-                string col3 = string.Empty;
-                string col4 = string.Empty;
-                string result = string.Empty;
-
-                sqlCommand = new SqlCommand(query, cnn);
-                sqlDataReader = sqlCommand.ExecuteReader();
-
-                while (sqlDataReader.Read())
-                {
-                    col1 = sqlDataReader.GetValue(0).ToString();
-                    col2 = sqlDataReader.GetValue(1).ToString();
-                    col3 = sqlDataReader.GetValue(2).ToString();
-                    col4 = sqlDataReader.GetValue(3).ToString();
-
-                    result = result + col1 + ". " + col2 + " " + " " + col3 + " " + col4 + Environment.NewLine;
-                }
-
-                textBox1.Text = result;
-
-                cnn.Close();
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            GetData();
-            updateDatagrid();
+            GetData("SELECT GameID, Date, PlayerName, Score FROM Game");
+            updateDatagrid(1);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -190,12 +158,13 @@ namespace CIW
 
         private void button3_Click(object sender, EventArgs e)
         {
-            top10();
+
         }
 
         private void btnTop_Click(object sender, EventArgs e)
         {
-            top10();
+            GetData("SELECT TOP 10 * FROM Game ORDER BY (Score) DESC");
+            updateDatagrid(2);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
