@@ -167,9 +167,18 @@ namespace CIW
             updateDatagrid(2);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter) 
+            {
+                GetData("SELECT TOP 10 * FROM Game  WHERE PlayerName LIKE '%Fel%' ORDER BY (Score) DESC");
+                updateDatagrid(2);
+            }
         }
     }
 }
