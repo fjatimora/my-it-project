@@ -50,9 +50,10 @@ namespace CIW
             // 
             // btnHistory
             // 
-            this.btnHistory.Location = new System.Drawing.Point(765, 388);
+            this.btnHistory.Location = new System.Drawing.Point(854, 369);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(75, 23);
+            this.btnHistory.Size = new System.Drawing.Size(86, 31);
             this.btnHistory.TabIndex = 1;
             this.btnHistory.Text = "Get Score";
             this.btnHistory.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@ namespace CIW
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Location = new System.Drawing.Point(14, 16);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(86, 31);
             this.button4.TabIndex = 4;
             this.button4.Text = "<- Back";
             this.button4.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@ namespace CIW
             // 
             // btnTop
             // 
-            this.btnTop.Location = new System.Drawing.Point(190, 388);
+            this.btnTop.Location = new System.Drawing.Point(197, 369);
+            this.btnTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTop.Name = "btnTop";
-            this.btnTop.Size = new System.Drawing.Size(75, 23);
+            this.btnTop.Size = new System.Drawing.Size(86, 31);
             this.btnTop.TabIndex = 5;
             this.btnTop.Text = "Get Top 10";
             this.btnTop.UseVisualStyleBackColor = true;
@@ -86,34 +89,44 @@ namespace CIW
             this.Date,
             this.Name,
             this.Score});
-            this.dataGridView1.Location = new System.Drawing.Point(577, 128);
+            this.dataGridView1.Location = new System.Drawing.Point(647, 65);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(444, 205);
+            this.dataGridView1.Size = new System.Drawing.Size(507, 273);
             this.dataGridView1.TabIndex = 7;
             // 
             // ID
             // 
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
+            this.ID.Width = 125;
             // 
             // Date
             // 
             this.Date.HeaderText = "Date Time";
+            this.Date.MinimumWidth = 6;
             this.Date.Name = "Date";
             this.Date.ReadOnly = true;
+            this.Date.Width = 125;
             // 
             // Name
             // 
             this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
+            this.Name.Width = 125;
             // 
             // Score
             // 
             this.Score.HeaderText = "Score";
+            this.Score.MinimumWidth = 6;
             this.Score.Name = "Score";
             this.Score.ReadOnly = true;
+            this.Score.Width = 125;
             // 
             // dataGridView2
             // 
@@ -123,56 +136,68 @@ namespace CIW
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(23, 128);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 65);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(444, 205);
+            this.dataGridView2.Size = new System.Drawing.Size(507, 273);
             this.dataGridView2.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Date Time";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Score";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(277, 99);
+            this.textBox1.Location = new System.Drawing.Point(305, 26);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 23);
+            this.textBox1.Size = new System.Drawing.Size(86, 27);
             this.textBox1.TabIndex = 9;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 99);
+            this.textBox2.Location = new System.Drawing.Point(188, 26);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 23);
+            this.textBox2.Size = new System.Drawing.Size(86, 27);
             this.textBox2.TabIndex = 10;
             this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // FrmScore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 437);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView2);
@@ -181,6 +206,8 @@ namespace CIW
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnHistory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FrmScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Score";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
