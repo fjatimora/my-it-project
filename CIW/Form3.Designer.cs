@@ -211,7 +211,6 @@ namespace CIW
             this.ClientSize = new System.Drawing.Size(1036, 328);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.ClientSize = new System.Drawing.Size(1176, 475);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView2);
