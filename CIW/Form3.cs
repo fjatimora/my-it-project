@@ -169,15 +169,37 @@ namespace CIW
 
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyData == Keys.Enter)
+            {
+                GetData("SELECT TOP 10 * FROM Game WHERE Date LIKE '%" + textBox2.Text + "%' ORDER BY (Score) DESC");
+                updateDatagrid(2);
+            }
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Enter) 
             {
-                GetData("SELECT TOP 10 * FROM Game  WHERE PlayerName LIKE '%Fel%' ORDER BY (Score) DESC");
+                GetData("SELECT TOP 10 * FROM Game WHERE PlayerName LIKE '%" + textBox1.Text + "%' ORDER BY (Score) DESC");
                 updateDatagrid(2);
+            }
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                GetData("SELECT * FROM Game WHERE Date LIKE '%" + textBox3.Text + "%' ORDER BY (Score) DESC");
+                updateDatagrid(1);
+            }
+        }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                GetData("SELECT * FROM Game WHERE PlayerName LIKE '%" + textBox4.Text + "%' ORDER BY (Score) DESC");
+                updateDatagrid(1);
             }
         }
     }
