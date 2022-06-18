@@ -50,7 +50,7 @@ namespace CIW
             // 
             // btnHistory
             // 
-            this.btnHistory.Location = new System.Drawing.Point(863, 405);
+            this.btnHistory.Location = new System.Drawing.Point(773, 340);
             this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Size = new System.Drawing.Size(86, 31);
@@ -72,7 +72,7 @@ namespace CIW
             // 
             // btnTop
             // 
-            this.btnTop.Location = new System.Drawing.Point(206, 405);
+            this.btnTop.Location = new System.Drawing.Point(215, 340);
             this.btnTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTop.Name = "btnTop";
             this.btnTop.Size = new System.Drawing.Size(86, 31);
@@ -89,7 +89,7 @@ namespace CIW
             this.Date,
             this.Name,
             this.Score});
-            this.dataGridView1.Location = new System.Drawing.Point(648, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(559, 59);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -197,7 +197,7 @@ namespace CIW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 440);
+            this.ClientSize = new System.Drawing.Size(1084, 383);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView2);
