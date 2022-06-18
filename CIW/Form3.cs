@@ -15,7 +15,6 @@ namespace CIW
 
         public string username;
 
-        private static ArrayList ListID = new ArrayList();
         private static ArrayList ListDateTime = new ArrayList();
         private static ArrayList ListName = new ArrayList();
         private static ArrayList ListScore = new ArrayList();
@@ -50,8 +49,11 @@ namespace CIW
 
                 while (sqlDataReader.Read())
                 {
-                    ListID.Add(sqlDataReader.GetValue(0).ToString());
-                    ListDateTime.Add(sqlDataReader.GetValue(1).ToString());
+                    string input = sqlDataReader.GetValue(1).ToString();
+                    int index = input.IndexOf(" ");
+                    input = input.Substring(0, index);
+
+                    ListDateTime.Add(input);
                     ListName.Add(sqlDataReader.GetValue(2).ToString());
                     ListScore.Add(sqlDataReader.GetValue(3).ToString());
                 }
@@ -70,18 +72,16 @@ namespace CIW
             if (j == 1)
             {
                 dataGridView1.Rows.Clear();
-                for (int i = 0; i < ListID.Count; i++)
+                for (int i = 0; i < ListName.Count; i++)
                 {
                     DataGridViewRow newRow = new DataGridViewRow();
 
                     newRow.CreateCells(dataGridView1);
-                    newRow.Cells[0].Value = ListID[i];
-                    newRow.Cells[1].Value = ListDateTime[i];
-                    newRow.Cells[2].Value = ListName[i];
-                    newRow.Cells[3].Value = ListScore[i];
+                    newRow.Cells[0].Value = ListDateTime[i];
+                    newRow.Cells[1].Value = ListName[i];
+                    newRow.Cells[2].Value = ListScore[i];
                     dataGridView1.Rows.Add(newRow);
                 }
-                ListID.Clear();
                 ListDateTime.Clear();
                 ListName.Clear();
                 ListScore.Clear();
@@ -89,18 +89,16 @@ namespace CIW
             else if (j == 2)
             {
                 dataGridView2.Rows.Clear();
-                for (int i = 0; i < ListID.Count; i++)
+                for (int i = 0; i < ListName.Count; i++)
                 {
                     DataGridViewRow newRow = new DataGridViewRow();
 
                     newRow.CreateCells(dataGridView2);
-                    newRow.Cells[0].Value = ListID[i];
-                    newRow.Cells[1].Value = ListDateTime[i];
-                    newRow.Cells[2].Value = ListName[i];
-                    newRow.Cells[3].Value = ListScore[i];
+                    newRow.Cells[0].Value = ListDateTime[i];
+                    newRow.Cells[1].Value = ListName[i];
+                    newRow.Cells[2].Value = ListScore[i];
                     dataGridView2.Rows.Add(newRow);
                 }
-                ListID.Clear();
                 ListDateTime.Clear();
                 ListName.Clear();
                 ListScore.Clear();
