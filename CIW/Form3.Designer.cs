@@ -211,7 +211,6 @@ namespace CIW
             this.Controls.Add(this.btnHistory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FrmScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Score";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
