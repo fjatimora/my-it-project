@@ -251,15 +251,12 @@ namespace CIW
 
         private void setBtn()
         {
-            this.RandLetter.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblUser.BackColor = System.Drawing.Color.Transparent;
             this.lblLives.BackColor = System.Drawing.Color.Transparent;
             this.Time.BackColor = System.Drawing.Color.Transparent;
 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.BorderSize = 0;
