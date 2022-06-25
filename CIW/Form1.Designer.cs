@@ -52,7 +52,7 @@ namespace CIW
             this.RandLetter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RandLetter.Location = new System.Drawing.Point(396, 108);
             this.RandLetter.Name = "RandLetter";
-            this.RandLetter.Size = new System.Drawing.Size(327, 46);
+            this.RandLetter.Size = new System.Drawing.Size(411, 59);
             this.RandLetter.TabIndex = 0;
             this.RandLetter.Text = "Random Letter";
             this.RandLetter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,7 +65,7 @@ namespace CIW
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(325, 193);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 59);
+            this.button1.Size = new System.Drawing.Size(86, 79);
             this.button1.TabIndex = 0;
             this.button1.TabStop = false;
             this.button1.Text = "Rand1";
@@ -80,7 +80,7 @@ namespace CIW
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(436, 193);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 59);
+            this.button2.Size = new System.Drawing.Size(86, 79);
             this.button2.TabIndex = 0;
             this.button2.TabStop = false;
             this.button2.Text = "Rand2";
@@ -93,9 +93,9 @@ namespace CIW
             this.lblScore.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblScore.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblScore.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblScore.Location = new System.Drawing.Point(711, 9);
+            this.lblScore.Location = new System.Drawing.Point(813, 12);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(77, 20);
+            this.lblScore.Size = new System.Drawing.Size(97, 26);
             this.lblScore.TabIndex = 3;
             this.lblScore.Text = "Score: 0";
             this.lblScore.Click += new System.EventHandler(this.label1_Click);
@@ -111,9 +111,9 @@ namespace CIW
             this.lblUser.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblUser.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblUser.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUser.Location = new System.Drawing.Point(13, 13);
+            this.lblUser.Location = new System.Drawing.Point(15, 17);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(78, 20);
+            this.lblUser.Size = new System.Drawing.Size(98, 26);
             this.lblUser.TabIndex = 5;
             this.lblUser.Text = "Player: ";
             // 
@@ -123,9 +123,10 @@ namespace CIW
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnExit.Location = new System.Drawing.Point(681, 385);
+            this.btnExit.Location = new System.Drawing.Point(778, 513);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(107, 53);
+            this.btnExit.Size = new System.Drawing.Size(122, 71);
             this.btnExit.TabIndex = 0;
             this.btnExit.TabStop = false;
             this.btnExit.Text = "Exit";
@@ -138,9 +139,10 @@ namespace CIW
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(555, 385);
+            this.button3.Location = new System.Drawing.Point(634, 513);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 53);
+            this.button3.Size = new System.Drawing.Size(122, 71);
             this.button3.TabIndex = 0;
             this.button3.TabStop = false;
             this.button3.Text = "Score";
@@ -155,7 +157,7 @@ namespace CIW
             this.lblLives.ForeColor = System.Drawing.SystemColors.Control;
             this.lblLives.Location = new System.Drawing.Point(541, 193);
             this.lblLives.Name = "lblLives";
-            this.lblLives.Size = new System.Drawing.Size(68, 20);
+            this.lblLives.Size = new System.Drawing.Size(85, 26);
             this.lblLives.TabIndex = 6;
             this.lblLives.Text = "Lives: 3";
             // 
@@ -167,7 +169,7 @@ namespace CIW
             this.Time.ForeColor = System.Drawing.SystemColors.Control;
             this.Time.Location = new System.Drawing.Point(541, 232);
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(96, 20);
+            this.Time.Size = new System.Drawing.Size(121, 26);
             this.Time.TabIndex = 7;
             this.Time.Text = "Time Left: ";
             // 
@@ -176,16 +178,16 @@ namespace CIW
             this.progressBar1.Location = new System.Drawing.Point(541, 255);
             this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(96, 23);
+            this.progressBar1.Size = new System.Drawing.Size(110, 31);
             this.progressBar1.TabIndex = 8;
             // 
             // CIW
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.lblLives);
@@ -197,6 +199,7 @@ namespace CIW
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RandLetter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CIW";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CIW";
