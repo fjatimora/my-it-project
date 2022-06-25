@@ -50,9 +50,10 @@ namespace CIW
             // 
             // btnHistory
             // 
-            this.btnHistory.Location = new System.Drawing.Point(747, 277);
+            this.btnHistory.Location = new System.Drawing.Point(746, 369);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(75, 23);
+            this.btnHistory.Size = new System.Drawing.Size(86, 31);
             this.btnHistory.TabIndex = 1;
             this.btnHistory.Text = "Get Score";
             this.btnHistory.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@ namespace CIW
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Location = new System.Drawing.Point(14, 16);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(86, 31);
             this.button4.TabIndex = 4;
             this.button4.Text = "<- Back";
             this.button4.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@ namespace CIW
             // 
             // btnTop
             // 
-            this.btnTop.Location = new System.Drawing.Point(172, 277);
+            this.btnTop.Location = new System.Drawing.Point(197, 369);
+            this.btnTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTop.Name = "btnTop";
-            this.btnTop.Size = new System.Drawing.Size(75, 23);
+            this.btnTop.Size = new System.Drawing.Size(86, 31);
             this.btnTop.TabIndex = 5;
             this.btnTop.Text = "Get Top 10";
             this.btnTop.UseVisualStyleBackColor = true;
@@ -85,11 +88,12 @@ namespace CIW
             this.Date,
             this.Name,
             this.Score});
-            this.dataGridView1.Location = new System.Drawing.Point(566, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(539, 65);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 205);
+            this.dataGridView1.Size = new System.Drawing.Size(490, 273);
             this.dataGridView1.TabIndex = 7;
             // 
             // Date
@@ -123,11 +127,12 @@ namespace CIW
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(12, 49);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 65);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(429, 205);
+            this.dataGridView2.Size = new System.Drawing.Size(490, 273);
             this.dataGridView2.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn2
@@ -156,41 +161,45 @@ namespace CIW
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(315, 20);
+            this.textBox1.Location = new System.Drawing.Point(360, 27);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 23);
+            this.textBox1.Size = new System.Drawing.Size(86, 27);
             this.textBox1.TabIndex = 9;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 20);
+            this.textBox2.Location = new System.Drawing.Point(218, 27);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 23);
+            this.textBox2.Size = new System.Drawing.Size(86, 27);
             this.textBox2.TabIndex = 10;
             this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(746, 20);
+            this.textBox3.Location = new System.Drawing.Point(745, 27);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 23);
+            this.textBox3.Size = new System.Drawing.Size(86, 27);
             this.textBox3.TabIndex = 11;
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(870, 20);
+            this.textBox4.Location = new System.Drawing.Point(886, 27);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 23);
+            this.textBox4.Size = new System.Drawing.Size(86, 27);
             this.textBox4.TabIndex = 12;
             this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox4_KeyDown);
             // 
             // FrmScore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 328);
+            this.ClientSize = new System.Drawing.Size(1045, 437);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -201,6 +210,8 @@ namespace CIW
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnHistory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FrmScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Score";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
